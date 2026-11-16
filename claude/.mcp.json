@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "qboc": { "type": "http", "url": "https://sandbox.qboc.hdcola.org/mcp" }
+  }
+}

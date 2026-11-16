@@ -3,30 +3,51 @@
 Plugins that connect AI agents to QuickBooks Online through the
 [QuickBooks Online Agents Connector](https://qboc.hdcola.org) (qboc).
 
-Each plugin declares the remote MCP server `https://qboc.hdcola.org/mcp` and
-ships a shared set of skills. There is no backend in this repository.
+Each plugin declares one remote MCP server and ships the same five skills.
+There is no backend in this repository.
 
 ## Status
 
-Under construction. Design: `docs/plugin-design.md` in the
-[website repository](https://github.com/hdcola/QuickBooksConnectSite).
+Skeleton, not yet tested in any desktop app. The endpoint is currently the
+Intuit **sandbox** preview, `https://sandbox.qboc.hdcola.org/mcp`. Design and
+findings from the official docs live in the
+[website repository](https://github.com/hdcola/QuickBooksConnectSite) (`docs/plugin-design.md`, `docs/plugin-p0.md`).
 
-Planned platforms: Claude Code, Codex, Antigravity.
-
-## Layout (planned)
+## Layout
 
 ```
-skills/          shared skills (single source)
-claude/          Claude Code plugin
-codex/           Codex plugin
-antigravity/     Antigravity plugin
-scripts/         sync-skills.sh, validate.sh
+skills/          shared skills (the single source)
+claude/          Claude plugin        (.claude-plugin/plugin.json, .mcp.json)
+codex/           Codex plugin         (portable plugin.json, mcp.json)
+antigravity/     Antigravity plugin   (plugin.json, mcp_config.json)
+.claude-plugin/marketplace.json     Claude marketplace
+.agents/plugins/marketplace.json    Codex marketplace
+scripts/sync-skills.sh              copy skills/ into each plugin (--check for CI)
+scripts/set-endpoint.sh <mcp-url>   point all three plugins at another endpoint
 ```
+
+Edit skills only in `skills/`, then run `scripts/sync-skills.sh`.
+
+## Skills
+
+`record-expense`, `create-invoice`, `categorize-transactions`, `run-reports`,
+`safe-delete-and-void`. Tool names are those of the qboc MCP server
+(`worker/mcp/` in the website repository); update the skills when tools change.
+
+## Validate
+
+```
+claude plugin validate .
+claude plugin validate ./claude
+agy plugin validate --strict ./antigravity
+```
+
+Codex has no validate command; it validates on upload.
 
 ## Closed beta
 
-The service is in closed beta. Only invited users can connect their
-QuickBooks company. Sign up at https://qboc.hdcola.org.
+Only invited users can connect their QuickBooks company. Sign up at
+https://qboc.hdcola.org.
 
 ## Disclaimer
 

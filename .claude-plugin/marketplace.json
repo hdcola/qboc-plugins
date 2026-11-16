@@ -1,0 +1,12 @@
+{
+  "name": "qboc",
+  "description": "qboc: connect AI agents to QuickBooks Online",
+  "owner": { "name": "hdcola", "url": "https://github.com/hdcola" },
+  "plugins": [
+    {
+      "name": "qboc",
+      "source": "./claude",
+      "description": "Connect your AI agent to your QuickBooks Online company. Closed beta."
+    }
+  ]
+}
