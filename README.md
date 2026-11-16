@@ -8,7 +8,7 @@ There is no backend in this repository.
 
 ## Status
 
-Skeleton, not yet tested in any desktop app. The endpoint is currently the
+Tested in the Claude desktop app; Codex and Antigravity are not tested yet. The endpoint is currently the
 Intuit **sandbox** preview, `https://sandbox.qboc.hdcola.org/mcp`. Design and
 findings from the official docs live in the
 [website repository](https://github.com/hdcola/QuickBooksConnectSite) (`docs/plugin-design.md`, `docs/plugin-p0.md`).
@@ -27,6 +27,16 @@ scripts/set-endpoint.sh <mcp-url>   point all three plugins at another endpoint
 ```
 
 Edit skills only in `skills/`, then run `scripts/sync-skills.sh`.
+
+## Install
+
+### Claude desktop app (tested)
+
+1. Cowork tab → Customize → Browse plugins → Personal → **+** → Add marketplace from GitHub → `hdcola/qboc-plugins`.
+2. Install `qboc`. You get five skills and one connector.
+3. The connector is not added automatically: click **Add**, then **Connect**, and sign in with Intuit.
+
+Codex and Antigravity desktop apps: not tested yet.
 
 ## Skills
 
