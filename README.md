@@ -18,7 +18,7 @@ findings from the official docs live in the
 ```
 skills/          shared skills (the single source)
 claude/          Claude plugin        (.claude-plugin/plugin.json, .mcp.json)
-codex/           Codex plugin         (portable plugin.json, mcp.json)
+codex/           Codex plugin         (.codex-plugin/plugin.json, .mcp.json)
 antigravity/     Antigravity plugin   (plugin.json, mcp_config.json)
 .claude-plugin/marketplace.json     Claude marketplace
 .agents/plugins/marketplace.json    Codex marketplace
@@ -43,6 +43,8 @@ agy plugin validate --strict ./antigravity
 ```
 
 Codex has no validate command; it validates on upload.
+
+Codex uses the compatibility layout (`.codex-plugin/plugin.json` with `"mcpServers": "./.mcp.json"`), the same as OpenAI's own plugins: the desktop app did not pick up the portable root `mcp.json`.
 
 ## Closed beta
 
