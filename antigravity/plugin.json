@@ -1,14 +1,22 @@
 {
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "qboc",
-  "displayName": "qboc for QuickBooks Online",
+  "displayName": "QuickBooks Online Agents Connector",
   "version": "0.1.0",
   "logo": "assets/logo.svg",
   "description": "Record expenses, create invoices, categorize transactions and run reports in your QuickBooks Online company. Closed beta.",
-  "author": { "name": "1001286238 ONTARIO INC.", "url": "https://qboc.hdcola.org" },
+  "author": {
+    "name": "1001286238 ONTARIO INC.",
+    "url": "https://qboc.hdcola.org"
+  },
   "homepage": "https://qboc.hdcola.org",
   "repository": "https://github.com/hdcola/qboc-plugins",
-  "keywords": ["quickbooks", "accounting", "bookkeeping", "mcp"],
+  "keywords": [
+    "quickbooks",
+    "accounting",
+    "bookkeeping",
+    "mcp"
+  ],
   "suggestedPrompts": [
     "Which customer invoices are overdue?",
     "Record a 45.20 office supplies expense paid by card today",

@@ -1,11 +1,19 @@
 {
   "name": "qboc",
-  "interface": { "displayName": "qboc" },
+  "interface": {
+    "displayName": "QuickBooks Online Agents Connector"
+  },
   "plugins": [
     {
       "name": "qboc",
-      "source": { "source": "local", "path": "./codex" },
-      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "source": {
+        "source": "local",
+        "path": "./codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Productivity"
     }
   ]
