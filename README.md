@@ -8,7 +8,7 @@ There is no backend in this repository.
 
 ## Status
 
-Tested in the Claude desktop app; Codex is not tested yet. The endpoint is currently the
+Tested in the Claude desktop app and the ChatGPT desktop app (Codex). Gemini needs no plugin: add the MCP address as a custom app. The endpoint is currently the
 Intuit **sandbox** preview, `https://sandbox.qlink.hdcola.org/mcp`. Design and
 findings from the official docs live in the
 [website repository](https://github.com/hdcola/QuickBooksConnectSite) (`docs/plugin-design.md`, `docs/plugin-p0.md`).
@@ -36,7 +36,13 @@ Edit skills only in `skills/`, then run `scripts/sync-skills.sh`.
 2. Install `qlink`. You get five skills and one connector.
 3. The connector is not added automatically: click **Add**, then **Connect**, and sign in with Intuit.
 
-Codex desktop app: not tested yet.
+### ChatGPT desktop app, including Codex (tested)
+
+1. Plugin settings → add the marketplace `hdcola/qlink-plugins`.
+2. Open the plugin and click **Install plugin**. You get five skills and one MCP server.
+3. Open the MCP server settings and authorize with Intuit.
+
+Codex uses the compatibility layout (`.codex-plugin/plugin.json` with `"mcpServers": "./.mcp.json"`), as OpenAI's own plugins do. The portable root `mcp.json` was not picked up.
 
 Antigravity: not supported. Its desktop app installs plugins through the
 command line tool and only from its official marketplace, which we are not in.
