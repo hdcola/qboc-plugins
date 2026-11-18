@@ -1,13 +1,13 @@
 {
-  "name": "qboc",
+  "name": "qlink",
   "version": "0.1.0",
   "description": "Connect your AI agent to your QuickBooks Online company: record expenses, create invoices, categorize transactions and run reports. Closed beta; not affiliated with Intuit.",
   "author": {
     "name": "1001286238 ONTARIO INC.",
-    "url": "https://qboc.hdcola.org"
+    "url": "https://qlink.hdcola.org"
   },
-  "homepage": "https://qboc.hdcola.org",
-  "repository": "https://github.com/hdcola/qboc-plugins",
+  "homepage": "https://qlink.hdcola.org",
+  "repository": "https://github.com/hdcola/qlink-plugins",
   "keywords": [
     "quickbooks",
     "accounting",
@@ -17,18 +17,18 @@
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "QuickBooks Online Agents Connector",
+    "displayName": "Qlink",
     "shortDescription": "QuickBooks Online for your agent",
-    "longDescription": "Connect your QuickBooks Online company to your AI agent through qboc. Record expenses, create invoices, categorize transactions and run reports by asking. Closed beta: only invited users can connect. QuickBooks is a registered trademark of Intuit Inc.; this plugin is not affiliated with or endorsed by Intuit.",
+    "longDescription": "Connect your QuickBooks Online company to your AI agent through Qlink. Record expenses, create invoices, categorize transactions and run reports by asking. Closed beta: only invited users can connect. QuickBooks is a registered trademark of Intuit Inc.; this plugin is not affiliated with or endorsed by Intuit.",
     "developerName": "1001286238 ONTARIO INC.",
     "category": "Productivity",
     "capabilities": [
       "Read",
       "Write"
     ],
-    "websiteURL": "https://qboc.hdcola.org",
-    "privacyPolicyURL": "https://qboc.hdcola.org/en/privacy/",
-    "termsOfServiceURL": "https://qboc.hdcola.org/en/terms/",
+    "websiteURL": "https://qlink.hdcola.org",
+    "privacyPolicyURL": "https://qlink.hdcola.org/en/privacy/",
+    "termsOfServiceURL": "https://qlink.hdcola.org/en/terms/",
     "brandColor": "#12263F",
     "composerIcon": "./assets/logo.svg",
     "logo": "./assets/logo.svg"

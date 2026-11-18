@@ -20,4 +20,4 @@ Both actions are permanent. Reply in the user's language.
 
 ## When the tools are missing
 
-Deleting and voiding can be turned off per company by the user. If `delete_record` and `void_record` are not available, tell the user they can turn them on for this company on their qboc Launch page, or do it directly in QuickBooks. Do not look for a workaround.
+Deleting and voiding can be turned off per company by the user. If `delete_record` and `void_record` are not available, tell the user they can turn them on for this company on their qlink Launch page, or do it directly in QuickBooks. Do not look for a workaround.
