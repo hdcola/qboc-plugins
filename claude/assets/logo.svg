@@ -1,8 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Qlink">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Qlink">
   <title>Qlink</title>
-  <rect width="64" height="64" rx="14" fill="#12263F"/>
-  <g stroke-width="6" stroke-linecap="round">
-    <circle cx="25" cy="32" r="12" stroke="#F6F1E7"/>
-    <circle cx="39" cy="32" r="12" stroke="#F2A33A"/>
+  <rect width="1024" height="1024" fill="#12263F"/>
+  <g transform="translate(-23 -23)" fill="none" stroke-linecap="round">
+    <circle cx="470" cy="470" r="250" stroke="#F6F1E7" stroke-width="110"/>
+    <path d="M610 610L760 760" stroke="#12263F" stroke-width="190"/>
+    <path d="M610 610L840 840" stroke="#F2A33A" stroke-width="130"/>
+    <path d="M655 655L800 800" stroke="#12263F" stroke-width="46"/>
   </g>
 </svg>
