@@ -1,6 +1,6 @@
 {
   "name": "qboc",
-  "displayName": "QuickBooks Online Agents Connector",
+  "displayName": "Agents Connector",
   "version": "0.1.0",
   "description": "Connect your AI agent to your QuickBooks Online company: record expenses, create invoices, categorize transactions and run reports. Closed beta; not affiliated with Intuit.",
   "author": {

@@ -1,7 +1,7 @@
 {
   "name": "qboc",
   "interface": {
-    "displayName": "QuickBooks Online Agents Connector"
+    "displayName": "Agents Connector"
   },
   "plugins": [
     {

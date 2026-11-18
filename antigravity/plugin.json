@@ -1,7 +1,7 @@
 {
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "qboc",
-  "displayName": "QuickBooks Online Agents Connector",
+  "displayName": "Agents Connector",
   "version": "0.1.0",
   "logo": "assets/logo.svg",
   "description": "Record expenses, create invoices, categorize transactions and run reports in your QuickBooks Online company. Closed beta.",
