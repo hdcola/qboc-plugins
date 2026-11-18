@@ -1,14 +1,14 @@
 {
-  "name": "qboc",
-  "displayName": "Agents Connector",
+  "name": "qlink",
+  "displayName": "Qlink",
   "version": "0.1.0",
   "description": "Connect your AI agent to your QuickBooks Online company: record expenses, create invoices, categorize transactions and run reports. Closed beta; not affiliated with Intuit.",
   "author": {
     "name": "1001286238 ONTARIO INC.",
-    "url": "https://qboc.hdcola.org"
+    "url": "https://qlink.hdcola.org"
   },
-  "homepage": "https://qboc.hdcola.org",
-  "repository": "https://github.com/hdcola/qboc-plugins",
+  "homepage": "https://qlink.hdcola.org",
+  "repository": "https://github.com/hdcola/qlink-plugins",
   "keywords": [
     "quickbooks",
     "accounting",

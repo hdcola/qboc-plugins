@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Point all three plugins at another MCP endpoint, e.g. scripts/set-endpoint.sh https://qboc.hdcola.org/mcp
+# Point all three plugins at another MCP endpoint, e.g. scripts/set-endpoint.sh https://qlink.hdcola.org/mcp
 set -euo pipefail
 cd "$(dirname "$0")/.."
 url="${1:?usage: set-endpoint.sh <mcp-url>}"

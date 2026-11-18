@@ -1,11 +1,11 @@
 {
-  "name": "qboc",
+  "name": "qlink",
   "interface": {
-    "displayName": "Agents Connector"
+    "displayName": "Qlink"
   },
   "plugins": [
     {
-      "name": "qboc",
+      "name": "qlink",
       "source": {
         "source": "local",
         "path": "./codex"

@@ -1,5 +1,5 @@
 {
   "mcpServers": {
-    "qboc": { "serverUrl": "https://sandbox.qboc.hdcola.org/mcp" }
+    "qlink": { "serverUrl": "https://sandbox.qlink.hdcola.org/mcp" }
   }
 }

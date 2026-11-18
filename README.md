@@ -1,7 +1,7 @@
-# qboc-plugins
+# qlink-plugins
 
 Plugins that connect AI agents to QuickBooks Online through the
-[QuickBooks Online Agents Connector](https://qboc.hdcola.org) (qboc).
+[Qlink](https://qlink.hdcola.org).
 
 Each plugin declares one remote MCP server and ships the same five skills.
 There is no backend in this repository.
@@ -9,7 +9,7 @@ There is no backend in this repository.
 ## Status
 
 Tested in the Claude desktop app and the ChatGPT desktop app (Codex). Gemini needs no plugin: add the MCP address as a custom app. The endpoint is currently the
-Intuit **sandbox** preview, `https://sandbox.qboc.hdcola.org/mcp`. Design and
+Intuit **sandbox** preview, `https://sandbox.qlink.hdcola.org/mcp`. Design and
 findings from the official docs live in the
 [website repository](https://github.com/hdcola/QuickBooksConnectSite) (`docs/plugin-design.md`, `docs/plugin-p0.md`).
 
@@ -32,13 +32,13 @@ Edit skills only in `skills/`, then run `scripts/sync-skills.sh`.
 
 ### Claude desktop app (tested)
 
-1. Cowork tab → Customize → Browse plugins → Personal → **+** → Add marketplace from GitHub → `hdcola/qboc-plugins`.
-2. Install `qboc`. You get five skills and one connector.
+1. Cowork tab → Customize → Browse plugins → Personal → **+** → Add marketplace from GitHub → `hdcola/qlink-plugins`.
+2. Install `qlink`. You get five skills and one connector.
 3. The connector is not added automatically: click **Add**, then **Connect**, and sign in with Intuit.
 
 ### ChatGPT desktop app, including Codex (tested)
 
-1. Plugin settings → add the marketplace `hdcola/qboc-plugins`.
+1. Plugin settings → add the marketplace `hdcola/qlink-plugins`.
 2. Open the plugin and click **Install plugin**. You get five skills and one MCP server.
 3. Open the MCP server settings and authorize with Intuit.
 
@@ -51,7 +51,7 @@ The `antigravity/` folder is kept for reference and is not published.
 ## Skills
 
 `record-expense`, `create-invoice`, `categorize-transactions`, `run-reports`,
-`safe-delete-and-void`. Tool names are those of the qboc MCP server
+`safe-delete-and-void`. Tool names are those of the Qlink MCP server
 (`worker/mcp/` in the website repository); update the skills when tools change.
 
 ## Validate
@@ -69,7 +69,7 @@ Codex uses the compatibility layout (`.codex-plugin/plugin.json` with `"mcpServe
 ## Closed beta
 
 Only invited users can connect their QuickBooks company. Sign up at
-https://qboc.hdcola.org.
+https://qlink.hdcola.org.
 
 ## Disclaimer
 
