@@ -19,7 +19,6 @@ findings from the official docs live in the
 skills/          shared skills (the single source)
 claude/          Claude plugin        (.claude-plugin/plugin.json, .mcp.json)
 codex/           Codex plugin         (.codex-plugin/plugin.json, .mcp.json)
-antigravity/     Antigravity plugin   (plugin.json, mcp_config.json)
 .claude-plugin/marketplace.json     Claude marketplace
 .agents/plugins/marketplace.json    Codex marketplace
 scripts/sync-skills.sh              copy skills/ into each plugin (--check for CI)
@@ -46,7 +45,6 @@ Codex uses the compatibility layout (`.codex-plugin/plugin.json` with `"mcpServe
 
 Antigravity: not supported. Its desktop app installs plugins through the
 command line tool and only from its official marketplace, which we are not in.
-The `antigravity/` folder is kept for reference and is not published.
 
 ## Skills
 
@@ -59,7 +57,6 @@ The `antigravity/` folder is kept for reference and is not published.
 ```
 claude plugin validate .
 claude plugin validate ./claude
-agy plugin validate --strict ./antigravity
 ```
 
 Codex has no validate command; it validates on upload.
