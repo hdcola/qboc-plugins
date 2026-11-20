@@ -8,8 +8,9 @@ There is no backend in this repository.
 
 ## Status
 
-Tested in the Claude desktop app and the ChatGPT desktop app (Codex). Gemini needs no plugin: add the MCP address as a custom app. The endpoint is currently the
-Intuit **sandbox** preview, `https://sandbox.qlink.hdcola.org/mcp`. Design and
+Tested in the Claude desktop app and the ChatGPT desktop app (Codex). Gemini needs no plugin: add the MCP address as a custom app. The endpoint is
+`https://qlink.hdcola.org/mcp` (closed beta). To test against the Intuit sandbox instead, run
+`scripts/set-endpoint.sh https://sandbox.qlink.hdcola.org/mcp`. Design and
 findings from the official docs live in the
 [website repository](https://github.com/hdcola/QuickBooksConnectSite) (`docs/plugin-design.md`, `docs/plugin-p0.md`).
 
@@ -19,7 +20,6 @@ findings from the official docs live in the
 skills/          shared skills (the single source)
 claude/          Claude plugin        (.claude-plugin/plugin.json, .mcp.json)
 codex/           Codex plugin         (.codex-plugin/plugin.json, .mcp.json)
-antigravity/     Antigravity plugin   (plugin.json, mcp_config.json)
 .claude-plugin/marketplace.json     Claude marketplace
 .agents/plugins/marketplace.json    Codex marketplace
 scripts/sync-skills.sh              copy skills/ into each plugin (--check for CI)
@@ -46,7 +46,6 @@ Codex uses the compatibility layout (`.codex-plugin/plugin.json` with `"mcpServe
 
 Antigravity: not supported. Its desktop app installs plugins through the
 command line tool and only from its official marketplace, which we are not in.
-The `antigravity/` folder is kept for reference and is not published.
 
 ## Skills
 
@@ -59,7 +58,6 @@ The `antigravity/` folder is kept for reference and is not published.
 ```
 claude plugin validate .
 claude plugin validate ./claude
-agy plugin validate --strict ./antigravity
 ```
 
 Codex has no validate command; it validates on upload.
