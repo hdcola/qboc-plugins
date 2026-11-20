@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "qlink": {
-      "url": "https://sandbox.qlink.hdcola.org/mcp"
+      "url": "https://qlink.hdcola.org/mcp"
     }
   }
 }

@@ -8,8 +8,9 @@ There is no backend in this repository.
 
 ## Status
 
-Tested in the Claude desktop app and the ChatGPT desktop app (Codex). Gemini needs no plugin: add the MCP address as a custom app. The endpoint is currently the
-Intuit **sandbox** preview, `https://sandbox.qlink.hdcola.org/mcp`. Design and
+Tested in the Claude desktop app and the ChatGPT desktop app (Codex). Gemini needs no plugin: add the MCP address as a custom app. The endpoint is
+`https://qlink.hdcola.org/mcp` (closed beta). To test against the Intuit sandbox instead, run
+`scripts/set-endpoint.sh https://sandbox.qlink.hdcola.org/mcp`. Design and
 findings from the official docs live in the
 [website repository](https://github.com/hdcola/QuickBooksConnectSite) (`docs/plugin-design.md`, `docs/plugin-p0.md`).
 
