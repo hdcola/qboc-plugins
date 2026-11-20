@@ -1,7 +1,7 @@
 {
   "name": "qlink",
   "displayName": "Qlink",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Connect your AI agent to your QuickBooks Online company: record expenses, create invoices, categorize transactions and run reports. Closed beta; not affiliated with Intuit.",
   "author": {
     "name": "1001286238 ONTARIO INC.",
@@ -15,5 +15,10 @@
     "bookkeeping",
     "mcp"
   ],
+  "license": "Apache-2.0",
+  "documentationUrl": "https://qlink.hdcola.org/en/agents/claude/",
+  "supportUrl": "https://github.com/hdcola/qlink-plugins/issues",
+  "privacyPolicyUrl": "https://qlink.hdcola.org/en/privacy/",
+  "termsOfServiceUrl": "https://qlink.hdcola.org/en/terms/",
   "icon": "./assets/logo.png"
 }
