@@ -1,7 +1,27 @@
-# qlink-plugins
+# Qlink for AI agents
 
-Plugins that connect AI agents to QuickBooks Online through the
-[Qlink](https://qlink.hdcola.org).
+Qlink connects your AI agent (Claude, ChatGPT, Gemini) to your QuickBooks Online
+company, so you can do everyday bookkeeping in plain language: record expenses
+and income, create and look up invoices, manage customers and vendors, categorize
+bank transactions and run reports.
+
+This repository holds the Qlink plugins. Each plugin declares one remote MCP
+server (`https://qlink.hdcola.org/mcp`) and ships the same five skills. There is
+no backend in this repository.
+
+- **Closed beta.** Only invited users can connect a QuickBooks company. Sign up at
+  https://qlink.hdcola.org.
+- **You stay in control.** You sign in with Intuit and choose one company. Qlink does not store your
+  QuickBooks data. Deleting and voiding can be turned off per company.
+- Step-by-step setup: https://qlink.hdcola.org/en/agents/
+- In Claude Code: `/plugin install qlink --marketplace hdcola/qlink-plugins`
+- Privacy policy: https://qlink.hdcola.org/en/privacy/ , terms: https://qlink.hdcola.org/en/terms/
+- Support: open an [issue](https://github.com/hdcola/qlink-plugins/issues) or write to privacy@hdcola.org.
+
+QuickBooks is a registered trademark of Intuit Inc. Qlink is not affiliated with
+or endorsed by Intuit.
+
+## For developers
 
 Each plugin declares one remote MCP server and ships the same five skills.
 There is no backend in this repository.
@@ -30,11 +50,12 @@ Edit skills only in `skills/`, then run `scripts/sync-skills.sh`.
 
 ## Install
 
-### Claude desktop app (tested)
+### Claude, website or desktop app (tested)
 
-1. Cowork tab → Customize → Browse plugins → Personal → **+** → Add marketplace from GitHub → `hdcola/qlink-plugins`.
-2. Install `qlink`. You get five skills and one connector.
-3. The connector is not added automatically: click **Add**, then **Connect**, and sign in with Intuit.
+1. Open https://claude.ai/customize/plugins/yours (in the desktop app: Customize in the left menu), then **Plugins**.
+2. **Add** → **Add marketplace**, enter `hdcola/qlink-plugins` and click **Sync**.
+3. In **Discover**, find Qlink and click **Add**.
+4. Open the plugin's **Connectors** tab, click **Add** (keep the detected sign-in settings), then **Connect**, sign in with Intuit and choose the company.
 
 ### ChatGPT desktop app, including Codex (tested)
 
