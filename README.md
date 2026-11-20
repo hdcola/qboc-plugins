@@ -23,6 +23,14 @@ or endorsed by Intuit.
 
 ## For developers
 
+### Branches
+
+- `main`: staging. Changes land here through pull requests. The marketplace that users add by
+  `hdcola/qlink-plugins` reads this branch (Claude only reads the default branch).
+- `prod`: released versions. Fast-forward `prod` from `main` when a version is ready
+  (`git checkout prod && git merge --ff-only main && git push`). The Claude directory
+  submission tracks `prod`. Raise `version` in `claude/.claude-plugin/plugin.json` before each release.
+
 Each plugin declares one remote MCP server and ships the same five skills.
 There is no backend in this repository.
 
